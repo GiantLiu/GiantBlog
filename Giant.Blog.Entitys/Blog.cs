@@ -19,10 +19,20 @@ namespace Giant.Blog.Entitys
         [MaxLength(100), Required]
         public string Password { get; set; }
         /// <summary>
+        /// 邮箱地址
+        /// </summary>
+        [MaxLength(100)]
+        public string Email { get; set; }
+        /// <summary>
         /// 名称
         /// </summary>
         [MaxLength(100), Required]
-        public string Name { get; set; }
+        public string Title { get; set; }
+        /// <summary>
+        /// 子标题
+        /// </summary>
+        [MaxLength(100)]
+        public string SubTitle { get; set; }
         /// <summary>
         /// Logo
         /// </summary>
